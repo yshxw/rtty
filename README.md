@@ -160,7 +160,10 @@ Automatic login: `https://your-server:5912/?id=device-id&username=device-usernam
 Open the context menu with the shortcut key: Ctrl+Shift+f
 
 ## Execute a command remote
-`curl -k https://your-server:5912/cmd -d '{"devid":"test","username":"test","password":"123456","cmd":"ls","params":["/"],"env":[]}'`
+
+    curl -k https://your-server:5912/cmd -d '{"devid":"test","username":"test","password":"123456","cmd":"ls","params":["/"],"env":[]}'
+
+    {"Err":0,"msg":"","code":0,"stdout":"bin\ndev\netc\nlib\nmnt\noverlay\nproc\nrom\nroot\nsbin\nsys\ntmp\nusr\nvar\nwww\n","stderr":""}
 
 # Contributing
 If you would like to help making [rtty](https://github.com/zhaojh329/rtty) better,
